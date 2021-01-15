@@ -1,0 +1,72 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 2097152 bytes for AllocateHeap
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+#   JVM is running with Unscaled Compressed Oops mode in which the Java heap is
+#     placed in the first 4GB address space. The Java Heap base address is the
+#     maximum limit for the native heap growth. Please use -XX:HeapBaseMinAddress
+#     to set the Java Heap base and to place the Java Heap above 4GB virtual address.
+# This output file may be truncated or incomplete.
+#
+#  Out of Memory Error (t:/workspace/open/src/hotspot/share/memory/allocation.cpp:45), pid=8784, tid=19420
+#
+# JRE version: Java(TM) SE Runtime Environment (13.0.2+8) (build 13.0.2+8)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (13.0.2+8, mixed mode, sharing, tiered, compressed oops, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF8 -ea -Xmx1024m 
+
+Host: Intel(R) Core(TM) i5-7200U CPU @ 2.50GHz, 4 cores, 3G,  Windows 10 , 64 bit Build 18362 (10.0.18362.778)
+Time: Wed May 20 16:30:16 2020 대한민국 표준시 elapsed time: 10 seconds (0d 0h 0m 10s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001ff9b59b000):  VMThread "VM Thread" [stack: 0x0000008442f40000,0x0000008443130000] [id=19420]
+
+Stack: [0x0000008442f40000,0x0000008443130000]
+[error occurred during error reporting (printing stack bounds), id 0xc0000005, EXCEPTION_ACCESS_VIOLATION (0xc0000005) at pc=0x000001ffa4fa10ad]
+
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x624f9a]
+V  [jvm.dll+0x770cfa]
+V  [jvm.dll+0x7724af]
+V  [jvm.dll+0x772a15]
+V  [jvm.dll+0x7729cb]
+V  [jvm.dll+0x6244df]
+C  [ntdll.dll+0x785b6]
+C  [ntdll.dll+0x6a056]
+C  [ntdll.dll+0x9fe3e]
+C  0x000001ffa4fa10ad
+
+VM_Operation (0x00000084419e6dc0): G1CollectFull, mode: safepoint, requested by thread 0x000001ff9bc9c000
+
+
+---------------  P R O C E S S  ---------------
+
+Threads class SMR info:
+_java_thread_list=0x000001ffbe82a890, length=11, elements={
+0x000001ff9bc9c000, 0x000001ffb6df2000, 0x000001ffb6df3800, 0x000001ffb6e0c000,
+0x000001ffb6e0c800, 0x000001ffb6e10000, 0x000001ffb6e10800, 0x000001ff9a87d800,
+0x000001ffb6f59000, 0x000001ffb6f6c800, 0x000001ffb706b800
+}
+
+Java Threads: ( => current thread )
+  0x000001ff9bc9c000 JavaThread "main" [_thread_blocked, id=12276, stack(0x0000008441800000,0x00000084419f0000)]
+  0x000001ffb6df2000 JavaThread "Reference Handler" daemon [_thread_blocked, id=14300, stack(0x0000008443130000,0x0000008443320000)]
+  0x000001ffb6df3800 JavaThread "Finalizer" daemon [_thread_blocked, id=19868, stack(0x0000008443320000,0x0000008443510000)]
+  0x000001ffb6e0c000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=16584, stack(0x0000008443510000,0x0000008443700000)]
+  0x000001ffb6e0c800 JavaThread "Attach Listener" daemon [_thread_blocked, id=20032, stack(0x0000008443700000,0x00000084438f0000)]
+  0x000001ffb6e10000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked
