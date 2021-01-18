@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SttActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar4"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@drawable/logoooo"
+        android:foregroundGravity="center"
+        android:minHeight="?attr/actionBarSize" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView_stt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/my_toolbar4"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nanumsquare"
+            android:text="아래 버튼을 누르고 주문해주세요"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/textView_stt"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/nanumsquare"
+            android:text="(예시/ 매콤한 메뉴,  불고기 들어간 달달한 메뉴 등)"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_inputVoice"
+            android:layout_width="@android:dimen/notification_large_icon_height"
+            android:layout_height="@android:dimen/notification_large_icon_height"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/microphone"
+            android:fontFamily="@font/nanumsquare" />
+    </LinearLayout>
+
+</RelativeLayout>

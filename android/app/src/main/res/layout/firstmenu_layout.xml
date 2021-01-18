@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:gravity="center">
+
+    <Button
+        android:id="@+id/button_scanQR"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/nanumsquare"
+        android:text="음식점 찾기" />
+
+    <Button
+        android:id="@+id/button_setting"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_toRightOf="@+id/button_scanQR"
+        android:backgroundTint="@color/yellow"
+        android:fontFamily="@font/nanumsquare"
+        android:text="설정" />
+</RelativeLayout>

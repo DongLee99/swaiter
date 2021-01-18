@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/nanumsquare"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_set"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton_single"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+                        android:checked="true"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="단품 (+0원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton_set"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:buttonTint="#000000"
+
+                        android:checked="false"
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="세트 (+ 2200원)"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_sidemenu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/nanumsquare"
+                    android:text="사이드메뉴"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_side"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton23"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="케이준양념감자-소 (+0원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton24"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="케이준양념감자-중 (+1,000원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton25"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="치즈감자 (+1,000원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton26"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="어니언치즈감자 (+1,000원)"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_drink"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="invisible">
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="@font/nanumsquare"
+                    android:text="음료"
+                    android:textAlignment="center"
+                    android:textColor="#000000" />
+
+                <RadioGroup
+                    android:id="@+id/radiogroup_drink"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <RadioButton
+                        android:id="@+id/radioButton27"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="콜라 (+0원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton28"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="사이다 (+0원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton29"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="오렌지주스 (+400원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton30"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="미린다-오렌지 (+0원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton31"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="마운틴듀 (+0원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton32"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="슈퍼베리워터주스 (+400원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton33"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="아메리카노 - ICE (+400원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton34"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="아메리카노 - HOT (+400원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton35"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="청포도에이드 (+600원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton36"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="복숭아에이드 (+600원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton37"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="레몬에이드 (+600원)"
+                        android:textColor="#000000" />
+
+                    <RadioButton
+                        android:id="@+id/radioButton38"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:buttonTint="#000000"
+
+                        android:fontFamily="@font/nanumsquare"
+                        android:text="망고에이드 (+600원)"
+                        android:textColor="#000000" />
+                </RadioGroup>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="option"
+            android:textAlignment="center"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/button_option"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/yellow"
+            android:text="옵션적용" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/button_totalPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nanumsquare"
+        android:text="0 원"
+        android:textAlignment="center"
+        android:textColor="#000000" />
+
+    <Button
+        android:id="@+id/button_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/yellow"
+        android:fontFamily="@font/nanumsquare"
+        android:text="장바구니 담기" />
+
+</LinearLayout>
